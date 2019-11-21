@@ -237,6 +237,7 @@ textarea.form-control {
 
 .site-header.scrolled .site-nav-toggle {
   top: -5px !important;
+  color: #fff;
 }
 
 .site-header.awake {

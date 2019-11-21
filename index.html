@@ -59,6 +59,7 @@
             <li><a href="#section-4">4: Be a hero NOW.</a></li>
             <li><a href="https://bobirakova.typeform.com/to/KAWaen" target=”_blank”>Surfway.</a></li>
             <li><a href="https://bobirakova.typeform.com/to/YSjlUg" target=”_blank”>Short Surfway.</a></li>
+            <li><input type="checkbox" id="stillnessbox" name="stillnessbox" value="Sit Still!">Sit Still!<br></li>
           </ul>
         </div>
       </nav>
@@ -113,5 +114,26 @@
     <script src="js/aos.js"></script>
 
     <script src="js/main.js"></script>
+
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+      var current_slide_id = 1;
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        if (!document.getElementById("stillnessbox").checked) {
+          current_slide_id += 1;
+          if (current_slide_id == 5) {
+            current_slide_id = 1;
+          }
+          document.location.href = "#section-" + current_slide_id;
+        } else {
+          current_slide_id = 1;
+          document.location.href = "#section-" + current_slide_id;
+        }
+      }, 15000);
+      </script>
   </body>
 </html>

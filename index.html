@@ -53,13 +53,13 @@
       <nav class="site-menu" id="ftco-navbar-spy">
         <div class="site-menu-inner" id="ftco-navbar">
           <ul class="list-unstyled">
-            <li><a href="#section-1">1: Climate Cha0s</a></li>
+            <!-- <li><a href="#section-1">1: Climate Cha0s</a></li>
             <li><a href="#section-2">2: Wait... What!?</a></li>
             <li><a href="#section-3">3: You can do(nate) it.</a></li>
-            <li><a href="#section-4">4: Be a hero NOW.</a></li>
-            <li><a href="https://bobirakova.typeform.com/to/KAWaen" target=”_blank”>Surfway.</a></li>
-            <li><a href="https://bobirakova.typeform.com/to/YSjlUg" target=”_blank”>Short Surfway.</a></li>
-            <li><input type="checkbox" id="stillnessbox" name="stillnessbox" value="Sit Still!">Sit Still!<br></li>
+            <li><a href="#section-4">4: Be a hero NOW.</a></li> -->
+            <li><a href="survey.html" target=”_blank”>Prot3ct Survey</a></li>
+            <li><a href="pledge.html" target=”_blank”>Pledge to Prot3ct</a></li>
+            <li><input type="checkbox" id="stillnessbox" name="stillnessbox" value="Sit Still!">Rotate<br></li>
           </ul>
         </div>
       </nav>
@@ -123,7 +123,7 @@
       // Update the count down every 1 second
       var x = setInterval(function() {
 
-        if (!document.getElementById("stillnessbox").checked) {
+        if (document.getElementById("stillnessbox").checked) {
           current_slide_id += 1;
           if (current_slide_id == 5) {
             current_slide_id = 1;
